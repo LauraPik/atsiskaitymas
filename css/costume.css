@@ -31,11 +31,21 @@ img[src*="Monotone"]{
     padding-right: 0.5rem;
 }
 /****************************************** main***********/
-#img1{
+.backgroundimg{
     background-image: url(../css/IMG/BGbg.png);
     background-color: linear-gradient(to right,white 50%, lightgray 50%);
     background-position-x:right;
     background-repeat: no-repeat; 
+    display: flex;
+}
+#block{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+    height: 7rem;
+    width: 150rem;
+    margin-top: -7rem;
+    }
+#img1 .gradient{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.00) 0%, #FFF 100%); 
 }
 #first{
     padding: 2rem;
@@ -66,31 +76,34 @@ img[src*="Monotone"]{
     text-transform: uppercase;
      
 }
-#down{
+
+.down{
+    margin-top: 2.5rem;
+    width: 20rem;
     margin-top: 2.5rem;
     border-radius: 24px;
     background: #2F3C33;
-    height: 64px;
-    padding: 24px 74px;
     margin-left: -4rem;
     text-decoration: none;
     color: var(--osler-gray-white, #FFF);
     /* Text lg/ExtraBold */
-        font-family: Nunito;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        letter-spacing: -0.36px;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.36px;
 }
-.down{
-    margin-top: 2.5rem;
-    margin-left: 11.5rem;
-}
+.btn:hover {
+    color: white;
+    background-color: black;
+    
+  }
+
 #img1{
     position: relative;
 }
-div .img-fluid{
+div .img{
     position: absolute;
     margin-right: -3rem;
     margin-top: 10rem;
@@ -340,7 +353,7 @@ div .img-fluid{
 .section2{
     border-radius: 180px;
     background: var(--healing-green-50, #84CC16); 
-    padding: 128px 118px;
+    padding: 2rem;
 }
 .section2 .row{
     margin-bottom: 4rem;
@@ -357,35 +370,35 @@ div .img-fluid{
     letter-spacing: -1.44px; 
 
 }
-.section2 .container .row .col-8{
+.section2 .container .row .col{
     border-radius: 64px;
-    padding: 48px;
+    padding: 30px;
     background: var(--osler-gray-white, #FFF);
     /* Card Shadow Gray80 5% */
     box-shadow: 0px 8px 16px 0px rgba(47, 60, 51, 0.05);
     margin-top: 1rem;
 }
-.section2 .container .row .col-8 h2{
+.section2 .container .row .col h2{
     color: var(--osler-gray-80, #2F3C33);
     /* Heading 2xl/ExtraBold */
     font-family: Nunito;
-    font-size: 72px;
+    font-size: 55px;
     font-style: normal;
     font-weight: 800;
     line-height: 80px; /* 111.111% */
     letter-spacing: -2.16px;
 }
-.section2 .container .row .col-8 span{
+.section2 .container .row .col span{
     color: var(--healing-green-50, #84CC16);
 /* Heading 2xl/ExtraBold */
     font-family: Nunito;
-    font-size: 72px;
+    font-size: 55px;
     font-style: normal;
     font-weight: 800;
     line-height: 80px;
     letter-spacing: -2.16px;
 }
-.section2 .container .row .col-8 p{
+.section2 .container .row .col p{
     color: var(--osler-gray-80, #2F3C33);
 /* Heading xs/SemiBold */
     font-family: Nunito;
@@ -401,8 +414,7 @@ div .img-fluid{
 .section3{
     border-radius: 180px;
     background: var(--osler-gray-10, #F5F5F5);
-    padding: 6rem;
-
+    padding: 2rem;    
 }
 .section3, .container, .row, .col, h1{
     color: var(--osler-gray-80, #2F3C33);
@@ -472,7 +484,7 @@ div .img-fluid{
 
 }
 .section3 .col-10{
-    padding: 32px;
+    padding: 25px;
     margin-bottom: 1rem;
     gap: 48px;
     border-radius: 64px;
@@ -490,7 +502,7 @@ div .img-fluid{
 }
 .section3 img[src*="bag (2).svg"]{
     border-radius: 30px;
-    background: var(--remote-red-10, #FFF);
+    background: var(--caring-violet-10, #EDE9FE); 
     height: 5rem;
     padding: 1rem;
 
@@ -603,7 +615,19 @@ div .img-fluid{
     margin-top: 0rem;
 }
 
-.section4 h3{
+
+.section4 a[href*="#"]{
+    text-decoration: none;
+
+}
+
+.section4 img[src*="tel1.png"]{
+    width: 27rem;
+}
+
+.section4 .btn{
+    margin-top: 2rem;
+    width: 20rem;
     color: var(--osler-gray-white, #FFF);
     /* Text lg/ExtraBold */
     font-family: Nunito;
@@ -614,19 +638,7 @@ div .img-fluid{
     letter-spacing: -0.36px;
     border-radius: 24px;
     background: var(--osler-gray-80, #2F3C33);
-    display: inline;
-    padding: 1rem;
-}
-.section4 a[href*="#"]{
-    text-decoration: none;
-}
-
-.section4 img[src*="tel1.png"]{
-    width: 27rem;
-}
-
-.section4 .download{
-    margin-top: 2rem;
+   
     
 }
 .section4 .download img[src*="Solid arrow right sm (1).svg"]{
@@ -841,19 +853,14 @@ div .img-fluid{
 
 /**********************************section6**********************/
 
-.section6 .container{
+.section6 {
     border-radius: 180px;
     background: var(--healing-green-20, #D9F99D);
-    padding-left: 9rem;
-    padding-right: 8rem;
-    
-   
-
+        
 }
-.section6 img[src*="section6.png"]{
-    width: 55rem;
-    display: flex;
-    justify-content: center;
+
+.section6 .col-5{
+    margin-top: 4rem;
 }
 
 .section6 h1{
@@ -879,8 +886,8 @@ div .img-fluid{
     letter-spacing: -0.32px;
     border-radius: 18px;
     border: 1px solid var(--osler-gray-80, #2F3C33);
-    display: inline;
     padding: 0.5rem;
+    
 
 }
 
@@ -906,6 +913,8 @@ div .img-fluid{
     padding-left: 1rem;
     width: 2rem;
 }
+
+/*********************************************************footer(end)*******************************************/
 footer.container-fluid {
     border-radius: 180px 180px 0px 0px;
     background: var(--osler-gray-80, #2F3C33);

@@ -12,6 +12,7 @@
 </head>
   <body>
     <header class="container-fluid">
+<div class="backgroundimg">
         <div class="container">
         <div class="row justify-content-center .d-block">
             <div class="col-4">
@@ -28,12 +29,13 @@
                 <div class="p-5 text-light">
                     <img src="css/IMG/Solid arrow right sm(3).svg" alt="icon">
                 </div>
-        </div>     
+        </div> 
+        </div>    
     <main>
-        <section class="container-m">
-            </div>
-            <div class="row">
-                <div id="first" class="col-lg-5 col-sm-12">
+    <section class="container-fluid">
+            <div class="container">
+            <div class="row position-relative">
+                <div id="first" class="col-lg-5">
                     <h3 class="p-4">Where AI Meets Telehealth & Telemedicine<span id="span">.</span></h3>
                     <p class="p-4">We're pioneering the future of healthcare with cutting-edge telehealth and telemedicine solution</p>
                     <div class="row justify-content-around scroll">
@@ -43,15 +45,14 @@
                         <div class="col">
                             <p> <img src="css/IMG/Monotone user.svg" alt="user">AI/ML Technology</p>
                         </div>
-                        <div class="down">
-                            <a id="down" href="#">Download The App<img src="css/IMG/bag.svg"></a>
-                        </div>
+                        <a href="#" class="btn btn-primary down">Download The App<img src="css/IMG/bag.svg"></a>
                         <div id="scroll0">
-                        <a id="scroll" href="#"><img src="css/IMG/Monotone chevron double down sm.svg">SCROLL DOWN</a>
+                        <a id="scroll" href="#"><img src="css/IMG/Monotone chevron double down sm.svg" alt="Monotone">SCROLL DOWN</a>
                         </div>
                     </div>       
                 </div>
-                <div id="img1" class="col-lg-7 col-sm-12 d-flex justify-content-center">
+                <div id="img1" class="col-lg-7 d-flex justify-content-center">
+                    <div class="gradient"></div>
                     <img id="mockup" src="css/IMG/MockUpphone.png" alt="MockUpphone">
                     <div class="AI">
                         <h5>AI Suggestion<img src="css/IMG/Monotone chevron left.svg"></h5>
@@ -70,15 +71,18 @@
                         </div>
                         <div class="col-7">
                         <h5>Dr. William Brown<img src="css/IMG/Solid verified.svg"></h5>
-                        <h6><img src="css/IMG/lung.svg">Lung Specialist<span>.</span><img src="css/IMG/Solid location.svg">52m<img src="css/IMG/Solid chevron right sm.svg"></h6>
+                        <h6><img src="css/IMG/lung.svg" alt="lung">Lung Specialist<span>.</span><img src="css/IMG/Solid location.svg">52m<img src="css/IMG/Solid chevron right sm.svg"></h6>
                         <img src="css/IMG/star.svg"><img src="css/IMG/star.svg"><img src="css/IMG/star.svg"><img src="css/IMG/star.svg"><img src="css/IMG/Solid star (1).svg"><p>4.1<span>.</span></p><p>1.2K</p>
                         </div>
                     </div>
                     </div>
                 </div>
               </div>
+              <div id="block" class="block position-absolute"></div>
              </div>
-        </section>
+        </div>
+    </section>
+    </div>
         <section class="container-fluid section1">
             <div class="container d-flex justify-content-around">
                 <div class="row">
@@ -94,22 +98,24 @@
                 </div>
             </div>
                 <div id="meta" class="row d-flex justify-content-between">
-                  <div class="col d-none d-lg-block"><img src="css/IMG/meta.svg"></div>
-                  <div class="col d-none d-lg-block"><img src="css/IMG/youtube.svg"></div>
-                  <div class="col col-sm-1"><img src="css/IMG/Misrosoft.svg"></div>
-                  <div class="col d-none d-lg-block"><img src="css/IMG/netflix.svg"></div>
-                  <div class="col d-none d-lg-block"><img src="css/IMG/amazon.svg"></div>
-                  <div class="col col-sm-1"><img src="css/IMG/google.svg"></div>
+                  <div class="col d-none d-lg-block img-fluid"><img src="css/IMG/meta.svg" alt="meta"></div>
+                  <div class="col d-none d-lg-block img-fluid"><img src="css/IMG/youtube.svg" alt="youtube"></div>
+                  <div class="col col-sm-2 img-fluid"><img src="css/IMG/Misrosoft.svg" alt="Misrosoft"></div>
+                  <div class="col d-none d-lg-block img-fluid"><svg width="196" height="130" viewBox="0 0 196 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M46.6629 84.5506C44.5118 84.9221 42.3228 85.0334 40.0584 85.33L33.1517 65.4395V86.1837C31.0005 86.4063 29.038 86.7031 27 87V49H32.7368L40.5867 70.5609V49H46.6629V84.5506ZM58.5513 62.916C60.8914 62.916 64.4768 62.8047 66.6279 62.8047V68.742C63.9482 68.742 60.8159 68.742 58.5513 68.8534V77.6856C62.0991 77.463 65.6467 77.1659 69.2319 77.0545V82.769L52.5127 84.0681V49H69.2319V54.9375H58.5513V62.916ZM91.6877 54.9376H85.4228V82.2501C83.3847 82.2501 81.3467 82.2501 79.3845 82.3241V54.9376H73.1196V49H91.688L91.6877 54.9376ZM101.5 62.5079H109.766V68.4453H101.5V81.9162H95.5745V49H112.445V54.9375H101.5V62.5079ZM122.258 76.7207C125.692 76.7947 129.164 77.0549 132.523 77.2401V83.1035C127.126 82.7693 121.729 82.4357 116.219 82.3241V49H122.258V76.7207ZM137.618 83.5117C139.543 83.6232 141.581 83.7346 143.543 83.9569V49H137.618V83.5117ZM170 49L162.338 67.0723L170 87C167.735 86.7031 165.471 86.2949 163.206 85.9237L158.866 74.9396L154.451 85.0334C152.262 84.662 150.148 84.5506 147.96 84.2538L155.734 66.8495L148.714 49H155.205L159.168 58.9824L163.395 49H170Z" fill="#647067"/>
+                    </svg></div>
+                  <div class="col d-none d-lg-block img-fluid"><img src="css/IMG/amazon.svg" alt="amazon"></div>
+                  <div class="col col-sm-2 img-fluid"><img src="css/IMG/google.svg" alt="google"></div>
               
                   <!-- Force next columns to break to new line at md breakpoint and up -->
                   <div class="w-100 d-none d-md-block"></div>
               
-                  <div class="col d-none d-lg-block"><img src="css/IMG/Misrosoft.svg"></div>
-                  <div class="col d-none d-lg-block"><img src="css/IMG/meta.svg"></div>
-                  <div class="col d-none d-lg-block"><img src="css/IMG/youtube.svg"></div>
-                  <div class="col d-none d-lg-block"><img src="css/IMG/netflix.svg"></div>
-                  <div class="col d-none d-lg-block"><img src="css/IMG/meta.svg"></div>
-                  <div class="col d-none d-lg-block"><img src="css/IMG/amazon.svg"></div>
+                  <div class="col d-none d-lg-block img-fluid"><img src="css/IMG/Misrosoft.svg" alt="Misrosoft"></div>
+                  <div class="col d-none d-lg-block img-fluid"><img src="css/IMG/meta.svg" alt="meta"></div>
+                  <div class="col d-none d-lg-block img-fluid"><img src="css/IMG/youtube.svg" alt="youtube"></div>
+                  <div class="col d-none d-lg-block img-fluid"><img src="css/IMG/netflix.svg" alt="netflix"></div>
+                  <div class="col d-none d-lg-block img-fluid"><img src="css/IMG/meta.svg"  alt="meta"></div>
+                  <div class="col d-none d-lg-block img-fluid"><img src="css/IMG/amazon.svg" alt="amazon"></div>
                 </div>
         </section>
         <article class="container-fluid section2">
@@ -119,18 +125,18 @@
                 </div>
             </div>
         <div class="container">
-            <div class="row d-flex justify-content-around">
-                <div class="col-8 col-lg-3">
+            <div class="row d-flex justify-content-around d-flex flex-md-row flex-column">
+                <div class="col col-lg-3">
                   <h2>99,5<span>%</span></h2>
-                  <p><img src="css/img/Solid heartbeat.svg">Diagnosis Accuracy</p>
+                  <p><img src="css/IMG/Solid heartbeat.svg" alt="heartbeat">Diagnosis Accuracy</p>
                 </div>
-                <div class="col-8 col-lg-3">
+                <div class="col col-lg-3">
                   <h2>1.4<span>M</span></h2>
-                  <p><img src="css/IMG/Solid drug container.svg">Prescription Filled</p>
+                  <p><img src="css/IMG/Solid drug container.svg" alt="container">Prescription Filled</p>
                 </div>
-                <div class="col-8 col-lg-3">
+                <div class="col col-lg-3">
                   <h2>200<span>K</span></h2>
-                  <p><img src="css/IMG/Solid stethoscope.svg">Doctors Connected</p>
+                  <p><img src="css/IMG/Solid stethoscope.svg" alt="stethoscope">Doctors Connected</p>
             </div>
         </div>
         </article>
@@ -148,69 +154,68 @@
                     <div id="services" class="row">
                         <div class="col-10">
                             <div class="row d-flex flex-md-row flex-column">
-                                <div class="col-1">
+                                <div class="col">
                                     <h5>01</h5>
                                 </div>
-                                <div class="col-2 d-flex justify-content-center">
+                                <div class="col d-flex justify-content-center">
                                     <img src="css/IMG/stetoschope.svg" alt="green stetoschope">
                                 </div>
                                 <div class="col-8">
                                     <h6>Intelligent Virtual Consultations</h6>
                                     <p>Our telehealth services provide convenient access to healthcare</p>
                                 </div>
-                                <div class="col-1 d-flex justify-content-end">
+                                <div class="col d-flex justify-content-end">
                                     <a href="#"><img src="css/IMG/arrow.svg" alt="arrow"></a>
                                 </div>
                             </div>
                         </div>
-                            </div>
                             <div class="col-10">
                                 <div class="row d-flex flex-md-row flex-column">
-                                    <div class="col-1">
+                                    <div class="col">
                                         <h5>02</h5>
                                     </div>
-                                    <div class="col-2 d-flex justify-content-center">
+                                    <div class="col d-flex justify-content-center">
                                         <img src="css/IMG/calendar.svg" alt="green stetoschope">
                                     </div>
                                     <div class="col-8">
                                         <h6>Intuitive Appointment Booking</h6>
                                         <p>We make booking appointments hassle-free for doctors & patients.</p>
                                     </div>
-                                    <div class="col-1 d-flex justify-content-end">
+                                    <div class="col d-flex justify-content-end">
                                         <a href="#"><img src="css/IMG/arrow.svg" alt="arrow"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-10">
                                 <div class="row d-flex flex-md-row flex-column">
-                                    <div class="col-1">
+                                    <div class="col">
                                         <h5>03</h5>
                                     </div>
-                                    <div class="col-2 d-flex justify-content-center">
+                                    <div class="col d-flex justify-content-center">
                                         <img src="css/IMG/folder.svg" alt="green stetoschope">
                                     </div>
                                     <div class="col-8">
                                         <h6>Patient Records Management</h6>
                                         <p>Our health records are securely stored and easily accessible.</p>
                                     </div>
-                                    <div class="col-1 d-flex justify-content-end">
+                                    <div class="col d-flex justify-content-end">
                                         <a href="#"><img src="css/IMG/arrow.svg" alt="arrow"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-10">
                                 <div class="row d-flex flex-md-row flex-column">
-                                    <div class="col-1">
+                                    <div class="col">
                                         <h5>04</h5>
                                     </div>
-                                    <div class="col-2 d-flex justify-content-center">
+                                    <div class="col d-flex justify-content-center">
                                         <img src="css/IMG/bag (2).svg" alt="green stetoschope">
                                     </div>
                                     <div class="col-8">
                                         <h6>AI Telehealth & Telemedicine Chatbot</h6>
                                         <p>Experience the power of AI in healthcare with our ultimate chatbot.</p>
                                     </div>
-                                    <div class="col-1 d-flex justify-content-end">
+                                    <div class="col d-flex justify-content-end">
                                         <a href="#"><img src="css/IMG/arrow.svg" alt="arrow"></a>
                                     </div>
                                   </div>
@@ -232,7 +237,7 @@
             </div>
             <div class="container intelHealth">
                 <div class="row d-flex flex-md-row flex-column-reverse">
-                <div class="col-7 col-lg-4">
+                <div class="col">
                     <h6>Feature #1</h6>
                     <h2>Intelligent Health Metrics For All</h2>
                     <p>Our platform employs state-of-the-art algorithms and machine learning to assist healthcare professionals in accurate diagnosis and treatment planning.</p>
@@ -244,23 +249,22 @@
                         <div class="col">
                             <h4>154.8<span>M</span></h4>
                             <h5>Patients Saved</h5>
-                        </div>
-                    <div class="download">
-                        <a href="#"><h3>Download The App<img src="css/IMG/Solid arrow right sm (1).svg"></h3></a>
-                    </div>
+                        </div>         
                 </div>
+                <a href="" class="btn btn-primary">Download The App<img src="css/IMG/Solid arrow right sm (1).svg"></a>
                 </div>
-                <div class="col col-lg-7 d-flex justify-content-end">
+                
+                <div class="col d-flex justify-content-end">
                     <img src="css/IMG/tel1.png">
                 </div>
             </div>
             </div>
                 <div class="container my-5">
                     <div class="row">
-                        <div class="col col-lg-7 d-flex justify-content-start">
+                        <div class="col d-flex justify-content-start">
                             <img src="css/IMG/tel2.png">
                         </div>
-                    <div class="col-7 col-lg-4">
+                    <div class="col">
                         <h6>Feature #2</h6>
                         <h2>Telehealth AI Chatbot</h2>
                         <p>With Osler, patients can schedule telehealth consultations with qualified healthcare providers. Whether you're seeking routine check-ups, specialist opinions, or mental health support.</p>
@@ -272,34 +276,32 @@
                             <div class="col">
                                 <img src="css/IMG/linesection4.png">
                             </div>
-                        <div class="download">
-                            <a href="#"><h3>See Our Data<img src="css/IMG/Solid arrow right sm (2).svg"></h3></a>
-                        </div>
+        
+                        <a href="#" class="btn btn-primary">See Our Data<img src="css/IMG/Solid arrow right sm (2).svg"></a>
                     </div>
                     </div>
                 </div>
                 <div class="container intelHealth my-5">
                     <div class="row d-flex flex-md-row flex-column-reverse">
-                    <div class="col-7 col-lg-4">
+                    <div class="col">
                         <h6>Feature #3</h6>
                         <h2>Intuitive Doctor Appointments</h2>
                         <p>Osler allows patients to schedule appointments with just a few clicks. Choose a time that suits you, and connect with your doctor.</p>
                         <div class="checkbox">
                             <div class="col">
-                                <h4><img src="css/IMG/check section4.svg" alt="checkbox">High AI Diagnosis Rate</h4>
+                                <h4><img class="img-fluid" src="css/IMG/check section4.svg" alt="checkbox">High AI Diagnosis Rate</h4>
                             </div>
                             <div class="col">
-                                <h4><img src="css/IMG/check section4.svg" alt="checkbox">Efficient & Streamlined Treatment</h4>
+                                <h4><img class="img-fluid" src="css/IMG/check section4.svg" alt="checkbox">Efficient & Streamlined Treatment</h4>
                             </div>
                             <div class="col">
-                                <h4><img src="css/IMG/check section4.svg" alt="checkbox">Almost 500K Health LLM Data</h4>
+                                <h4><img class="img-fluid" src="css/IMG/check section4.svg" alt="checkbox">Almost 500K Health LLM Data</h4>
                             </div>
                         </div>
-                        <div class="download">
-                            <a href="#"><h3>Schedule Appointment<img src="css/IMG/calendar section4.svg"></h3></a>
-                        </div>
+
+                        <a href="#" class="btn btn-primary">Schedule Appointment<img src="css/IMG/calendar section4.svg"></a>
                     </div>
-                    <div class="col-9 col-lg-7">
+                    <div class="col">
                         <img src="css/IMG/tel3.png">
                     </div>
                     </div>
@@ -347,7 +349,7 @@
                     <h2>Secure and Confidential</h2>
                     <p>We prioritize your privacy and security. Your health data is stored and transmitted securely.</p>
                   </div>
-                  <div class="col"><img src="css/img/cloud section5.svg">
+                  <div class="col"><img src="css/IMG/cloud section5.svg">
                     <h2>Healthcare Ecosystem</h2>
                     <p>Osler offers a holistic healthcare experience. From consultations with medical experts.</p>
                 </div>
@@ -364,12 +366,15 @@
     <article class="container-fluid section6">
         <div class="container my-5">
             <div class="row d-flex flex-md-row flex-column-reverse">
-                    <div class="col-7 d-flex justify-content-start">
-                        <img src="css/IMG/section6.png">
+                    <div class="col d-flex justify-content-start">
+                        <img class="img-fluid" src="css/IMG/section6.png">
                     </div>
-                
-                <div class="col-5  text-center p-5">
-                    <h6>Sign Up Today</h6>
+                <div class="col text-center p-5">
+                    <div class="container d-flex justify-content-center">
+                        <div class="row">
+                            <h6>Sign Up Today</h6>
+                        </div>
+                    </div>
                     <h1>Book A Free Consultation.</h1>
                     <div class="download d-flex justify-content-center">
                         <a href="#"><h3>Download The App<img src="css/IMG/download.svg"></h3></a>
